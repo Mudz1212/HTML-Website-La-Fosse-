@@ -1,5 +1,7 @@
 <!doctype html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="CSS/Index.css"/>
     <title>Gallery | Cat gallery</title>
     <link rel="icon" type="image/x-icon" href="Assests/favicon.ico" />
@@ -13,59 +15,60 @@
      <h1> to <h6> are just different sized headings  
     -->
    
-    <header>
-      <h1 style="background-color: lightgray;">Cat Gallery</h1>
-      <nav id ="Site-Header">
-      <ul class = "nav-links">
-        <a href = "#top" class = "logo">Mudathir<span>.dev</span></a>
-        <li><a href = "#About">About</a></li>
-        <li><a href = "#Gallery">Gallery</a></li>
-      </ul>
+<header>
+    <nav id="site-header">
+        <a href="#top" class="logo">Mudathir's <span> Website</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="https://www.cats.org.uk" target="_blank" rel="noopener noreferrer">Cat Facts</a></li>
+        </ul>
     </nav>
-    </header>
- 
-      <Main>
-    <h4 style ="color: black;">Hello I am</h4>
+</header>
 
-    <h1>A collection of the most beautiful cats</h1>
-
-    <section id ="About"
-      <h3>A bit about me</h3>
-      <p class="about-me">
-        I'm a Computer Science graduate with a passion for DevOps and all things
-        tech. I enjoy figuring out how things work, learning new skills, and
-        taking on challenges that push me to grow. When I'm not behind a screen,
-        you'll probably find me in the gym chasing a new personal best, watching
-        football, or trying to befriend every cat I come across. I like to keep
-        life balanced—always aiming to improve, but never forgetting to enjoy
-        the journey and have a laugh along the way.
-      </p>
+<main>
+    <section class="hero" id="about">
+        <div class="hero-text">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1 class="hero-title">Mudathir Ahmed</h1>
+            <p class="about-me">
+                I'm a Computer Science graduate with a passion for DevOps and all things tech. I enjoy figuring out how things work, learning new skills, and taking on challenges that push me to grow. I’m naturally curious and enjoy getting stuck into problems, especially when there’s an opportunity to learn something I haven’t come across before. I also value the experience of working with others, sharing ideas, and learning from people with different perspectives. When I'm not behind a screen, you'll probably find me in the gym chasing a new personal best, watching football, or trying to befriend every cat I come across. I like keeping life balanced, always aiming to improve and make the most of new opportunities, but never forgetting to enjoy the journey, have a laugh, and appreciate the people around me. Ultimately, I’m someone who enjoys learning, meeting new people, and seeing where each new challenge takes me.
+            </p>
+            <a href="#gallery" class="btn">See the gallery</a>
+        </div>
+        <div class="hero-image">
+            <img src="Assests/Ragdoll.jpg" alt="A Ragdoll cat" class="hero-img">
+        </div>
     </section>
+</main>
+
+
+      
     
-    <section id="Gallery">
-       <div><h2>Top cats</h2></div>
+    <section id="gallery">
+       <div><h2>My Top Cats Of All Time & Why They're Special</h2></div>
 
       <div class="cards-grid">
-        <article class="card">
-          <h3>Why cats make the best pets</h3>
-
-          <ul class ="cat reasons">
-            <li>Independent and low-maintenance</li>
-            <li>Affectionate and loving</li>
-            <li>Great for small living spaces</li>
-            <li>Excellent hunters of pests</li>
-            <li>Quiet and peaceful companions</li>
-          </ul>
-        </article>
-
+      
         <article class="card">
                     <h3>My top 3 cat breeds</h3>
                     <ol class="cat-breeds">
                         <li>British Shorthair</li>
                         <li>Maine Coon</li>
                         <li>Ragdoll</li>
+                        <li>Russian Blue</li>
                     </ol>
-                </article>            
+                </article>  <article class="card">
+          <h3>Why cats make the best pets</h3>
+
+          <ul class ="cat-reasons"></ul>
+            <li>Independent and low-maintenance</li>
+            <li>Affectionate and loving</li>
+            <li>Great for small living spaces</li>
+            <li>Excellent hunters of pests</li>
+            <li>Quiet and peaceful companions</li>
+          </ul>
+        </article>          
       </div>
 
       <table class="cat-table">
@@ -96,12 +99,19 @@
                         <td>Long</td>
                         <td>Gentle</td>
                     </tr>
+                    <tr>
+                        <td>Russian Blue</td>
+                        <td>Medium</td>
+                        <td>Short</td>
+                        <td>Playful</td>
+                    </tr>
                 </tbody>
             </table>
     </section>
 
     <section id="contact">
-            <h3>Get in touch</h3>
+      <div class="contact-card">
+            <h3>Get in touch if you want to learn more!</h3>
             <form id="contact-form">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
@@ -114,12 +124,16 @@
 
                 <button type="submit">Send</button>
             </form>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/mudathir-ahmed/" target="_blank">LinkedIn</a>
+              <a href="https://github.com/Mudz1212" target="_blank">GitHub</a>
+            </div>
+          </div>
         </section>
 
-  </Main>
-
   <footer>
-    <p>© 2024 Mudathir.dev. All rights reserved.</p>
+    <p>© 2026 Mudathir.dev. All rights reserved.</p>
   </footer>
   
 </body>
