@@ -16,3 +16,12 @@ const darkModeButton = document.getElementById("darkMode");
 darkModeButton.addEventListener("click", function () {
   document.body.classList.toggle("darkmode");
 });
+
+const heroImg = document.getElementById("heroImg");
+heroImg.addEventListener("mouseenter", function () {
+  heroImg.src = "Assests/sideEye.jpg";
+});
+
+heroImg.addEventListener("mouseleave", function () {
+  heroImg.src = "Assests/Ragdoll.jpg";
+});
